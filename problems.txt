@@ -1,0 +1,167 @@
+Here's a comprehensive list of every issue you've faced building DocuMind, structured exactly how you should present them in interviews. Each one shows a different engineering skill.
+
+---
+
+## Issues Faced During Development
+
+### 1. Deprecated SDK Migration
+**Problem:** The `google.generativeai` Python package was decommissioned mid-development with no backward compatibility.  
+**Impact:** All Gemini API calls broke; generation stopped working entirely.  
+**Solution:** Migrated to the new `google-genai` SDK, refactored the client initialization pattern from `genai.configure()` to `genai.Client()`. Also pivoted to Groq as the primary LLM provider to reduce dependency on a single vendor.  
+**Skills shown:** Adaptability, reading deprecation notices, migrating between SDK versions, vendor diversification.
+
+---
+
+### 2. Free Tier API Quota Exhaustion (Limit: 0)
+**Problem:** Google Gemini returned `RESOURCE_EXHAUSTED` errors with `limit: 0`, meaning the free tier quota wasn't fully activated on the API key, despite following setup instructions.  
+**Impact:** Zero requests could be made; the entire generation pipeline was blocked.  
+**Solution:** Switched to Groq Cloud, which has a more reliable free tier (30 RPM, 1.5M tokens/min). Later learned this is a common Google Cloud billing account verification issue.  
+**Skills shown:** Debugging cloud API quotas, fallback planning, understanding rate-limit HTTP status codes (429).
+
+---
+
+### 3. ChromaDB Collection Collision
+**Problem:** `create_collection("docs")` threw `InternalError: Collection [docs] already exists` on second run because persistent storage wasn't designed for idempotent re-creation.  
+**Impact:** Script crashed on every run after the first.  
+**Solution:** Replaced `create_collection` with `get_or_create_collection`, which handles existing collections gracefully.  
+**Skills shown:** Understanding persistent storage lifecycle, idempotent API design.
+
+---
+
+### 4. Environment Variable Loading Failure
+**Problem:** `os.getenv("GROQ_API_KEY")` returned `None` despite the key being in the `.env` file.  
+**Root Cause:** The file was named `back.env` instead of `.env`, and `python-dotenv` wasn't being called (`load_dotenv()` was missing or called with wrong path).  
+**Impact:** All Groq API calls failed with authentication errors.  
+**Solution:** Renamed file to `.env`, ensured `load_dotenv()` is called at module initialization.  
+**Skills shown:** Debugging environment configuration, understanding dotenv conventions on Windows.
+
+---
+
+### 5. Microsoft C++ Build Tools Missing for ChromaDB
+**Problem:** `pip install chromadb` failed with `Microsoft Visual C++ 14.0 or greater is required` because `chroma-hnswlib` has native C extensions that need compilation.  
+**Impact:** Could not install one of the core dependencies.  
+**Solution:** Installed Microsoft C++ Build Tools via Visual Studio Build Tools installer (2GB, 10-minute install), then pip install succeeded.  
+**Skills shown:** Understanding Python native extensions, build toolchain troubleshooting on Windows.
+
+---
+
+### 6. Symlink Warnings on Windows (Hugging Face Cache)
+**Problem:** `huggingface_hub` warned that "your machine does not support symlinks" and fell back to duplicated file storage.  
+**Impact:** Increased disk usage for cached models; warning noise in terminal.  
+**Solution:** Understood it's a cosmetic warning; optionally enabled Windows Developer Mode to support symlinks. Not critical to functionality.  
+**Skills shown:** Recognizing non-critical warnings vs. actual errors, understanding filesystem differences between OS.
+
+---
+
+### 7. Decommissioned Vision Model
+**Problem:** The `llama-3.2-11b-vision-preview` model was decommissioned by Groq mid-development, returning HTTP 400 errors.  
+**Impact:** Image description pipeline completely broken; multimodal feature unavailable.  
+**Solution:** Queried available models via Groq API (`client.models.list()`), identified `meta-llama/llama-4-scout-17b-16e-instruct` as the supported replacement, updated model ID.  
+**Skills shown:** Using API introspection to discover available resources, responding to model deprecations.
+
+---
+
+### 8. Variable Name Mismatch Causing 500 Errors
+**Problem:** Used `question.lower()` in the query endpoint, but the variable was actually `request.question`.  
+**Impact:** Server returned 500 Internal Server Error on every query.  
+**Solution:** Changed to `request.question.lower()`.  
+**Skills shown:** Reading Python tracebacks, identifying `NameError` in production code.
+
+---
+
+### 9. Indentation Bug Silently Breaking Retrieval Logic
+**Problem:** The `collection.query()` call was accidentally indented inside an `else` block, so it only ran when NOT asking about images.  
+**Impact:** Image-related queries returned no results; only non-visual queries worked.  
+**Solution:** Moved the query call outside the `if/else` block to run unconditionally.  
+**Skills shown:** Logic flow debugging, recognizing when indentation changes program behavior.
+
+---
+
+### 10. Sequential Image Processing Causing Slow Uploads
+**Problem:** PDFs with many images (10+) took 30+ seconds to upload because `describe_image()` was called sequentially — one API call at a time.  
+**Impact:** Poor user experience; upload appeared frozen; server was blocked.  
+**Solution:** Implemented `ThreadPoolExecutor` with 5 workers to process images concurrently, reducing upload time by ~5x.  
+**Skills shown:** Concurrency, I/O-bound optimization, understanding rate limits vs. parallelism trade-offs.
+
+---
+
+### 11. Semantic Retrieval Missing Image Descriptions
+**Problem:** Querying "What does the image on slide 5 depict?" returned chunks with only size metadata, not the actual visual description.  
+**Root Cause:** The embedding model didn't strongly associate the metadata prefix `[Image on page 5, size 585x431]` with the description text when the query used the word "slide."  
+**Solution (Implemented):** Enhanced chunk formatting to repeat page number and include both "page" and "slide" keywords. Increased `top_k` for visual queries.  
+**Solution (Planned):** Page-level metadata filtering using ChromaDB's `where` clause for exact page matching.  
+**Skills shown:** Understanding semantic search limitations, hybrid retrieval strategies (dense + metadata filtering).
+
+---
+
+### 12. `0.0.0.0` vs `localhost` Browser Blocking
+**Problem:** Opening `http://0.0.0.0:8000` in Chrome triggered a security block: "Unsafe attempt to load URL from frame."  
+**Root Cause:** `0.0.0.0` is a server bind address, not a valid browser address. Browsers only accept `localhost` or `127.0.0.1` for local development.  
+**Solution:** Used `http://localhost:8000` for browser access; `0.0.0.0` is only for Docker/network accessibility.  
+**Skills shown:** Understanding networking basics, difference between bind address and loopback address.
+
+---
+
+### 13. PDF Content Not Matching Query Expectations
+**Problem:** Asking "What is this PDF about?" on a question bank returned fragments of exam questions, not a coherent summary.  
+**Root Cause:** Question banks lack introductions or abstracts. The retrieval returned random questions, and the LLM had no overview to synthesize.  
+**Solution:** Improved system prompt to acknowledge fragmented contexts and do its best. Added explicit suggestions in the frontend for better queries.  
+**Skills shown:** Understanding RAG limitations for certain document types, prompt engineering for edge cases.
+
+---
+
+### 14. Frontend-Backend API Contract Mismatch
+**Problem:** Frontend called non-existent endpoints (`/multi-query`) and sent parameters (`top_k: 10`) the backend didn't support. Frontend expected `source` objects with `filename`, `chunk_index`, `text_preview` fields, but backend returned plain strings.  
+**Impact:** Frontend would crash or show empty states.  
+**Solution:** Aligned both sides — used `/query` for now, matched `top_k` limits, simplified source display to strings.  
+**Skills shown:** API contract design, full-stack debugging, managing feature rollout (multi-query deferred to later).
+
+---
+
+### 15. TypeScript Type Safety Gaps
+**Problem:** `useState([])` without type parameters treated everything as `any`, hiding potential bugs. Event handlers were untyped. Error handling didn't use `axios.isAxiosError()`.  
+**Impact:** TypeScript offered no protection; type-related bugs would only appear at runtime.  
+**Solution:** Added proper interfaces (`Document`, `Message`), typed all `useState` calls, used `React.ChangeEvent`, `React.KeyboardEvent`, and `isAxiosError` guards.  
+**Skills shown:** TypeScript best practices, defensive coding, proper error handling patterns.
+
+---
+
+### 16. Accessibility Issues with `div` Buttons
+**Problem:** Clickable elements were implemented as `<div>` elements without keyboard handlers or ARIA roles.  
+**Impact:** Keyboard-only users and screen readers couldn't interact with the document list or delete buttons.  
+**Solution:** Replaced clickable `div`s with semantic `<button>` elements, added `onKeyDown` handlers for Enter key, used `role="button"` and `tabIndex` where buttons weren't possible.  
+**Skills shown:** Web accessibility (a11y), semantic HTML, inclusive design.
+
+---
+
+### 17. Hardcoded API URL in Frontend
+**Problem:** `const API_URL = 'http://localhost:8000'` was hardcoded in the frontend source.  
+**Impact:** Would break in staging/production without code changes.  
+**Solution:** Used `import.meta.env.VITE_API_URL` with a fallback to `localhost:8000`, enabling environment-specific configuration via `.env` files.  
+**Skills shown:** Environment-aware configuration, 12-factor app principles.
+
+---
+
+### 18. React Key Stability Issue
+**Problem:** Used array index `i` as the `key` prop for chat messages.  
+**Impact:** If messages were inserted, deleted, or reordered, React could reuse DOM nodes incorrectly, causing stale state or visual glitches in source expansion.  
+**Solution:** Switched to `crypto.randomUUID()` for stable, unique message IDs.  
+**Skills shown:** Understanding React reconciliation, key stability best practices.
+
+---
+
+## How to Present These in an Interview
+
+When asked "What challenges did you face?", structure your answer like this:
+
+> "The biggest challenges fell into three categories. **First, API volatility** — I had to migrate between Gemini and Groq mid-development, handle a decommissioned vision model, and work within free tier rate limits. This taught me to design provider-agnostic interfaces.
+>
+> **Second, semantic search edge cases** — image descriptions weren't being retrieved because the embedding model didn't associate metadata prefixes with the actual content. I fixed this by enriching chunk text with explicit page/slide references and adding adaptive retrieval that boosts `top_k` for visual queries.
+>
+> **Third, making it production-quality** — I addressed sequential bottleneck processing with concurrent image analysis, fixed TypeScript type safety gaps, improved accessibility, and set up environment-aware configuration. The total time from first line to working multimodal product was about [X] days."
+
+Pick 3-4 issues to go deep on, and mention the rest as "other things I handled along the way."
+
+---
+
+This list proves you didn't just follow a tutorial — you debugged real problems across the entire stack. That's what senior engineers look for.
