@@ -1,4 +1,4 @@
-#!/home/parikshit/projects/Bum-ass-Nigga/backend/venv/bin/python3.11
+#!/home/shalvin/MajorProject/major/backend/venv/bin/python3
 import sys
 from onnxruntime.tools.onnxruntime_test import main
 if __name__ == '__main__':
