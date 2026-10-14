@@ -64,7 +64,7 @@ SEMANTIC_ENTROPY_MODEL = os.getenv(
 ).strip()
 
 # Number of candidate answers to sample (shared by SE and SC)
-SEMANTIC_SAMPLES_N = int(os.getenv("SEMANTIC_SAMPLES_N", "5"))
+SEMANTIC_SAMPLES_N = int(os.getenv("SEMANTIC_SAMPLES_N", "2"))
 
 # Sampling temperature for candidate generation
 SEMANTIC_TEMPERATURE = float(os.getenv("SEMANTIC_TEMPERATURE", "0.7"))
@@ -250,6 +250,7 @@ async def get_candidate_answer(
                     temperature=SEMANTIC_TEMPERATURE,
                     max_tokens=150,
                 )
+            import time; time.sleep(3.5)  # Groq free tier: ~30 req/min
             return response.choices[0].message.content
         except RateLimitError as e:
             last_error = e
@@ -609,16 +610,13 @@ class ConfidenceEstimator:
         # ── 1. Retrieval Stats ──
         retrieval_stats = compute_retrieval_stats(distances)
 
-        # ── 2. Generate N candidate answers concurrently ──
-        candidate_tasks = [
-            get_candidate_answer(
+        # ── 2. Generate N candidate answers sequentially (rate-limit safe) ──
+        candidates_raw = []
+        for _ in range(SEMANTIC_SAMPLES_N):
+            result = await get_candidate_answer(
                 self.client, query, context[:6000], self.semaphore
             )
-            for _ in range(SEMANTIC_SAMPLES_N)
-        ]
-        candidates_raw = await asyncio.gather(
-            *candidate_tasks, return_exceptions=True
-        )
+            candidates_raw.append(result)
         candidates: List[Optional[str]] = [
             c if isinstance(c, str) else None for c in candidates_raw
         ]

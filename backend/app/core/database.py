@@ -1,10 +1,11 @@
 from typing import List
 import chromadb
-import cohere
 from chromadb.api.types import EmbeddingFunction, Embeddings
+from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
 from groq import AsyncGroq, Groq
 
 from app.core.config import (
+    CHROMA_COLLECTION_NAME,
     CHROMA_DIR,
     COHERE_API_KEY,
     COHERE_EMBEDDING_MODEL,
@@ -25,46 +26,21 @@ from conformal import ConformalPredictor
 # -----------------------------------------------------------------------------
 
 chroma_client = chromadb.PersistentClient(path=str(CHROMA_DIR))
-cohere_client = cohere.Client(COHERE_API_KEY)
+# Branch B: Cohere quota exhausted — cohere_client set to None.
+# Confidence.py handles None gracefully (falls back to TF-IDF similarity).
+cohere_client = None
 groq_client = Groq(api_key=GROQ_API_KEY)
 async_groq_client = AsyncGroq(api_key=GROQ_API_KEY)
 corrective_retriever = CorrectiveRetriever(async_groq_client, cohere_client)
 
 
-class CustomCohereEmbedding(EmbeddingFunction):
-    """
-    Cohere embedding function for ChromaDB.
+# Branch B: local all-MiniLM-L6-v2 embeddings (384-dim) — matches stored vectors.
+# CustomCohereEmbedding removed; Cohere quota exhausted.
+embedding_fn = DefaultEmbeddingFunction()
 
-    Documents are embedded with input_type="search_document".
-    Queries should be embedded with input_type="search_query" using embed_queries().
-    """
-
-    def __init__(self):
-        self.client = cohere_client
-        self.model = COHERE_EMBEDDING_MODEL
-
-    def _embed(self, input: List[str], input_type: str) -> Embeddings:
-        if not input:
-            return []
-
-        response = self.client.embed(
-            texts=input,
-            model=self.model,
-            input_type=input_type,
-        )
-        return response.embeddings
-
-    def __call__(self, input: List[str]) -> Embeddings:
-        return self._embed(input, "search_document")
-
-    def embed_queries(self, input: List[str]) -> Embeddings:
-        return self._embed(input, "search_query")
-
-
-embedding_fn = CustomCohereEmbedding()
 
 collection = chroma_client.get_or_create_collection(
-    name="documents",
+    name=CHROMA_COLLECTION_NAME,
     embedding_function=embedding_fn,
     metadata={"hnsw:space": "cosine"},
 )

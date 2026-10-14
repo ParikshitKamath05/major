@@ -1,0 +1,26 @@
+{
+  "evaluation_file": "eval_results_squad2_20261011_163354.json",
+  "total_evaluated": 148,
+  "answerable": {
+    "n": 74,
+    "correct": 0,
+    "incorrect": 74,
+    "accuracy": 0.0,
+    "mean_confidence": 0.6188
+  },
+  "unanswerable": {
+    "n": 74,
+    "correct": 74,
+    "incorrect": 0,
+    "accuracy": 1.0,
+    "mean_confidence": 0.6002,
+    "non_empty_predicted_answer_count": 74,
+    "abstained_correctly_count": 74,
+    "substantive_hallucinations_count": 0
+  },
+  "bimodality_verification": {
+    "count_in_0_4_to_0_7": 0,
+    "count_below_0_4": 51,
+    "count_above_or_equal_0_7": 97
+  }
+}

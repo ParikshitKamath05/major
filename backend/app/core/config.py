@@ -18,6 +18,7 @@ if not COHERE_API_KEY:
 # File system paths
 CHROMA_DIR = Path(os.getenv("CHROMA_DIR", str(BASE_DIR.parent / "chroma_db"))).resolve()
 CHROMA_DIR.mkdir(parents=True, exist_ok=True)
+CHROMA_COLLECTION_NAME = os.getenv("CHROMA_COLLECTION_NAME", "documents")
 
 LOGS_DIR = Path(os.getenv("LOGS_DIR", str(BASE_DIR / "logs"))).resolve()
 LOGS_DIR.mkdir(parents=True, exist_ok=True)

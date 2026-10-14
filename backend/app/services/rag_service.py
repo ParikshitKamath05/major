@@ -170,6 +170,7 @@ Provide a comprehensive, well-reasoned analysis."""
                 max_tokens=GROQ_MAX_TOKENS,
             )
 
+            time.sleep(3.5)  # Groq free tier: ~30 req/min
             return response.choices[0].message.content
 
         except Exception as e:

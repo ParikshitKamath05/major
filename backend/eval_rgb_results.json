@@ -1,0 +1,1345 @@
+{
+  "metrics": {
+    "accuracy": 0.5,
+    "ece": 0.2581,
+    "brier_score": 0.3122,
+    "auroc_pos": 0.4545,
+    "auroc_neg": 0.5455,
+    "conf_std": 0.2024,
+    "n_unique_conf": 124
+  },
+  "results": [
+    {
+      "id": 0,
+      "query": "When are subject committees established?",
+      "gold_answer": "beginning of each parliamentary session",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.771,
+      "is_correct": 0
+    },
+    {
+      "id": 1,
+      "query": "In what year did Huguenot refugees first settle in Norwich?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7717,
+      "is_correct": 1
+    },
+    {
+      "id": 2,
+      "query": "What city served as Poland's capital in 1313?",
+      "gold_answer": "Kraków",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7362,
+      "is_correct": 0
+    },
+    {
+      "id": 3,
+      "query": "What have the two different Islamist movements been described as oscillating between?",
+      "gold_answer": "poles",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.2689,
+      "is_correct": 0
+    },
+    {
+      "id": 4,
+      "query": "deforestation increased in Brazil during what years?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7308,
+      "is_correct": 1
+    },
+    {
+      "id": 5,
+      "query": "What was used to create a new electromagnetic theory to reconcile the troubles with electromagnetic theory as it used to stand?",
+      "gold_answer": "quantum mechanics",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7487,
+      "is_correct": 0
+    },
+    {
+      "id": 6,
+      "query": "What experiments are used to understand how magma flows?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7653,
+      "is_correct": 1
+    },
+    {
+      "id": 7,
+      "query": "A small fraction of the cold water flow from Lake Constance goes to what other lake?",
+      "gold_answer": "Lake Überlingen",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.0867,
+      "is_correct": 0
+    },
+    {
+      "id": 8,
+      "query": "How is error checking involved in delivery? ",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7305,
+      "is_correct": 1
+    },
+    {
+      "id": 9,
+      "query": "What did the US abandon? ",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7328,
+      "is_correct": 1
+    },
+    {
+      "id": 10,
+      "query": "By what process is singlet oxygen made in the tropophere?",
+      "gold_answer": "photolysis of ozone",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7573,
+      "is_correct": 0
+    },
+    {
+      "id": 11,
+      "query": "According to reduction, if X and Y can be solved by the same algorithm then X performs what function in relationship to Y?",
+      "gold_answer": "reduces",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7159,
+      "is_correct": 0
+    },
+    {
+      "id": 12,
+      "query": "What molecules of the adaptive immune system only exist in jawed vertebrates?",
+      "gold_answer": "immunoglobulins and T cell receptors",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7545,
+      "is_correct": 0
+    },
+    {
+      "id": 13,
+      "query": "Who lead the school back to leading research institution in 2oth century?",
+      "gold_answer": "James Bryant Conant",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7611,
+      "is_correct": 0
+    },
+    {
+      "id": 14,
+      "query": "What was William Johnson's Sioux name?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7533,
+      "is_correct": 1
+    },
+    {
+      "id": 15,
+      "query": " Where did Maududi's books not place Islam?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7393,
+      "is_correct": 1
+    },
+    {
+      "id": 16,
+      "query": "What protestant religions made Northern European counties safe for Huguenot immigration?",
+      "gold_answer": "Lutheran and Reformed",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7562,
+      "is_correct": 0
+    },
+    {
+      "id": 17,
+      "query": "Health problems were lower in places with higher levels of what?",
+      "gold_answer": "equality",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7507,
+      "is_correct": 0
+    },
+    {
+      "id": 18,
+      "query": "Which plateau is the left part of Vistula on?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.258,
+      "is_correct": 1
+    },
+    {
+      "id": 19,
+      "query": "When was the random number theorem proven?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7479,
+      "is_correct": 1
+    },
+    {
+      "id": 20,
+      "query": "What alumni wrote \"The Closing of the American Mind\"?",
+      "gold_answer": "Allan Bloom",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7337,
+      "is_correct": 0
+    },
+    {
+      "id": 21,
+      "query": "How many days does the high not reach 90 in December?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.752,
+      "is_correct": 1
+    },
+    {
+      "id": 22,
+      "query": "What was first battle in 1745?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7596,
+      "is_correct": 1
+    },
+    {
+      "id": 23,
+      "query": "What percentage of American gas stations were out of fuel in 1973?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7523,
+      "is_correct": 1
+    },
+    {
+      "id": 24,
+      "query": "The Amazon region is home to how many species of insect?",
+      "gold_answer": "2.5 million",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7557,
+      "is_correct": 0
+    },
+    {
+      "id": 25,
+      "query": "What created a centralized router or server?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7541,
+      "is_correct": 1
+    },
+    {
+      "id": 26,
+      "query": "What does Pleurobrachia incorporate into their own tentacles?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7588,
+      "is_correct": 1
+    },
+    {
+      "id": 27,
+      "query": "How much land does Cambridge own in Allston?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7601,
+      "is_correct": 1
+    },
+    {
+      "id": 28,
+      "query": "What region does use the term 'private schools' to refer to universities?",
+      "gold_answer": "North America",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7541,
+      "is_correct": 0
+    },
+    {
+      "id": 29,
+      "query": "What is the hottest temperature record for Fresno?",
+      "gold_answer": "115 °F",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7122,
+      "is_correct": 0
+    },
+    {
+      "id": 30,
+      "query": "Which TFEU article defines the ordinary legislative procedure that applies for majority of EU acts?",
+      "gold_answer": "TFEU article 294",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7735,
+      "is_correct": 0
+    },
+    {
+      "id": 31,
+      "query": "How many counties initially made up the definition of southern California?",
+      "gold_answer": "seven",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7652,
+      "is_correct": 0
+    },
+    {
+      "id": 32,
+      "query": "What was abnormal British defense?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7541,
+      "is_correct": 1
+    },
+    {
+      "id": 33,
+      "query": "Who wrote the American Times bestselling book titled \"The Closing of the American Mind\"?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.137,
+      "is_correct": 1
+    },
+    {
+      "id": 34,
+      "query": "Where is the Asian gold miners strongest in Victoria?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7653,
+      "is_correct": 1
+    },
+    {
+      "id": 35,
+      "query": "Telnet was sold to ",
+      "gold_answer": "Telenet was incorporated in 1973 and started operations in 1975. It went public in 1979 and was then sold to GTE",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7451,
+      "is_correct": 0
+    },
+    {
+      "id": 36,
+      "query": "The French and Indian War was the New World aspect of what European conflict?",
+      "gold_answer": "Seven Years' War",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7421,
+      "is_correct": 0
+    },
+    {
+      "id": 37,
+      "query": "What was Apple Talk ",
+      "gold_answer": "a proprietary suite of networking protocols developed by Apple Inc. in 1985",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7683,
+      "is_correct": 0
+    },
+    {
+      "id": 38,
+      "query": "What is the Upati Garden in Polish?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7641,
+      "is_correct": 1
+    },
+    {
+      "id": 39,
+      "query": "What French General negotiated at Montreal?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7596,
+      "is_correct": 1
+    },
+    {
+      "id": 40,
+      "query": "What advancements besides military technology did Europe achieve?",
+      "gold_answer": "communication",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.744,
+      "is_correct": 0
+    },
+    {
+      "id": 41,
+      "query": "What must the adoption of laws which will have legal effect in the EU have?",
+      "gold_answer": "a proper legal basis",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7492,
+      "is_correct": 0
+    },
+    {
+      "id": 42,
+      "query": "What opportunity did Barack Obama support for Swedish children?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7543,
+      "is_correct": 1
+    },
+    {
+      "id": 43,
+      "query": "Who was the leader of the Islamist regime in Sudan?",
+      "gold_answer": "Hassan al-Turabi",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7619,
+      "is_correct": 0
+    },
+    {
+      "id": 44,
+      "query": "What are the second and third most populated megalopolis after Southern California?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7726,
+      "is_correct": 1
+    },
+    {
+      "id": 45,
+      "query": "Of what group in the periodic table is oxygen a member?",
+      "gold_answer": "chalcogen",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7653,
+      "is_correct": 0
+    },
+    {
+      "id": 47,
+      "query": "How was the Dutch name for the Rhine originally spelled? ",
+      "gold_answer": "Rhijn",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7624,
+      "is_correct": 0
+    },
+    {
+      "id": 48,
+      "query": "How many types of sediment particles have gained the most attention recently?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7605,
+      "is_correct": 1
+    },
+    {
+      "id": 49,
+      "query": "What did DECnet Phase I become?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7174,
+      "is_correct": 1
+    },
+    {
+      "id": 50,
+      "query": "What was Virgin Media rebranded as?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7485,
+      "is_correct": 1
+    },
+    {
+      "id": 51,
+      "query": "What percentage of electricity was made by steam turbine in the 1990s?",
+      "gold_answer": "90",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7687,
+      "is_correct": 0
+    },
+    {
+      "id": 52,
+      "query": "What did Joseph Haas say in his email?",
+      "gold_answer": "\"Wise up or die.\"",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7567,
+      "is_correct": 0
+    },
+    {
+      "id": 53,
+      "query": "What chemical keeps immune cells away from the site of infection?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7479,
+      "is_correct": 1
+    },
+    {
+      "id": 54,
+      "query": "What garden was formally only for royalty?",
+      "gold_answer": "The Saxon Garden",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7567,
+      "is_correct": 0
+    },
+    {
+      "id": 55,
+      "query": "What was the objective of Royal Proclamation of 1763?",
+      "gold_answer": "outlined the division and administration of the newly conquered territory",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7507,
+      "is_correct": 0
+    },
+    {
+      "id": 56,
+      "query": "What implication can be derived for P and NP if P and co-NP are established to be unequal?",
+      "gold_answer": "P is not equal to NP",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7641,
+      "is_correct": 0
+    },
+    {
+      "id": 57,
+      "query": "Which study suggests that previous estimates were overstated?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7327,
+      "is_correct": 1
+    },
+    {
+      "id": 58,
+      "query": "What was the target percentage of households BSkyB wanted to reach?",
+      "gold_answer": "36%",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7672,
+      "is_correct": 0
+    },
+    {
+      "id": 59,
+      "query": "What does ctenophora rely on for digestion and respiration?",
+      "gold_answer": "water flow through the body cavity",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7349,
+      "is_correct": 0
+    },
+    {
+      "id": 60,
+      "query": "Who passed out educational leaflets in courtrooms during the Vietnam War?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7671,
+      "is_correct": 1
+    },
+    {
+      "id": 61,
+      "query": "Who did Alexander I marry?",
+      "gold_answer": "Sybilla of Normandy",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7451,
+      "is_correct": 0
+    },
+    {
+      "id": 62,
+      "query": "What is the high end of the temperature range in winter?",
+      "gold_answer": "70",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7417,
+      "is_correct": 0
+    },
+    {
+      "id": 63,
+      "query": "How many protestants live in France today?",
+      "gold_answer": "one million",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7499,
+      "is_correct": 0
+    },
+    {
+      "id": 64,
+      "query": "What happens when bathocyroe and ocyropsis clap their lobes together?",
+      "gold_answer": "jet of expelled water drives them backwards very quickly.",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7554,
+      "is_correct": 0
+    },
+    {
+      "id": 65,
+      "query": "\"Wrecking amendments\" are designed to encourage further what?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7623,
+      "is_correct": 1
+    },
+    {
+      "id": 66,
+      "query": "How much more land does the school own in Allston than Cambridge?",
+      "gold_answer": "approximately fifty percent",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7504,
+      "is_correct": 0
+    },
+    {
+      "id": 67,
+      "query": "Community-based conservation efforts are being replaced where",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7622,
+      "is_correct": 1
+    },
+    {
+      "id": 68,
+      "query": "Where does the Rhine river's measurement begin?",
+      "gold_answer": "Old Rhine Bridge at Constance",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.756,
+      "is_correct": 0
+    },
+    {
+      "id": 69,
+      "query": "What is used in photosynthesis and released by cellular respiration? ",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3762,
+      "is_correct": 1
+    },
+    {
+      "id": 70,
+      "query": "Where was the packet switching used in the 1980s? ",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7541,
+      "is_correct": 1
+    },
+    {
+      "id": 71,
+      "query": " What was the Yuan dynasty called in Japanese?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7604,
+      "is_correct": 1
+    },
+    {
+      "id": 72,
+      "query": "Was this concept originally intended to be an application only meant for use by the military?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7436,
+      "is_correct": 1
+    },
+    {
+      "id": 73,
+      "query": "What does kAp stand for?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7645,
+      "is_correct": 1
+    },
+    {
+      "id": 74,
+      "query": "Where are the Harvard medical, Dental and school of Public Health located?",
+      "gold_answer": "Longwood Medical and Academic Area",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7599,
+      "is_correct": 0
+    },
+    {
+      "id": 75,
+      "query": "What is the United State's second-busiest commercial port?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7552,
+      "is_correct": 1
+    },
+    {
+      "id": 76,
+      "query": "What was the UK's least popular TV service in 2015?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7541,
+      "is_correct": 1
+    },
+    {
+      "id": 77,
+      "query": "What did Tymnet connect ",
+      "gold_answer": "connect host computers (servers)at thousands of large companies, educational institutions, and government agencies",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7595,
+      "is_correct": 0
+    },
+    {
+      "id": 78,
+      "query": "What is located within this district?",
+      "gold_answer": "the oldest street in the United States of America",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7809,
+      "is_correct": 0
+    },
+    {
+      "id": 79,
+      "query": "Colonialism often means a country doing what?",
+      "gold_answer": "taking physical control of another",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7628,
+      "is_correct": 0
+    },
+    {
+      "id": 80,
+      "query": "What amount of the worlds carbon is stored in the Amazon forest?",
+      "gold_answer": "10% of the carbon stores",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7545,
+      "is_correct": 0
+    },
+    {
+      "id": 81,
+      "query": "When was the great plague of London?",
+      "gold_answer": "1665",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7587,
+      "is_correct": 0
+    },
+    {
+      "id": 82,
+      "query": "The idea that Islam can be apolitical isn't able to be embraced by whom?",
+      "gold_answer": "its supporters",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.0939,
+      "is_correct": 0
+    },
+    {
+      "id": 83,
+      "query": "What is a twin prime?",
+      "gold_answer": "pairs of primes with difference 2",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7665,
+      "is_correct": 0
+    },
+    {
+      "id": 84,
+      "query": "What describes objects not moving freely?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.359,
+      "is_correct": 1
+    },
+    {
+      "id": 85,
+      "query": "What force acted on bodies to retard their velocity?",
+      "gold_answer": "friction",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7593,
+      "is_correct": 0
+    },
+    {
+      "id": 86,
+      "query": "What process attributes old wealth to those that already have it?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7452,
+      "is_correct": 1
+    },
+    {
+      "id": 87,
+      "query": "What is the immune system unable to distinguish from healthy tissue?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7541,
+      "is_correct": 1
+    },
+    {
+      "id": 88,
+      "query": "What is the Victoria state bird?",
+      "gold_answer": "helmeted honeyeater",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7451,
+      "is_correct": 0
+    },
+    {
+      "id": 89,
+      "query": "What happens before the foundation is dug and when a final inspection is passed?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7456,
+      "is_correct": 1
+    },
+    {
+      "id": 90,
+      "query": "The down turned boat skylights are located in what lobby?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.76,
+      "is_correct": 1
+    },
+    {
+      "id": 91,
+      "query": "At first, what did oxygen and iron combine to form?",
+      "gold_answer": "banded iron formations",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.1092,
+      "is_correct": 0
+    },
+    {
+      "id": 92,
+      "query": "What part of the Rhine flows through North Rhine-Westphalia?",
+      "gold_answer": "Lower Rhine",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7654,
+      "is_correct": 0
+    },
+    {
+      "id": 93,
+      "query": "Which central European country had a Calvinist ruler?",
+      "gold_answer": "Prussia",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.752,
+      "is_correct": 0
+    },
+    {
+      "id": 94,
+      "query": "Where is the Rhine Bridge?",
+      "gold_answer": "Arnhem",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.2667,
+      "is_correct": 0
+    },
+    {
+      "id": 95,
+      "query": "When did Warsaw become the capital of the Kingdom of Prussia?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7539,
+      "is_correct": 1
+    },
+    {
+      "id": 96,
+      "query": "What did William Smith do in the US?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7331,
+      "is_correct": 1
+    },
+    {
+      "id": 97,
+      "query": "What would be needed to host a larger population?",
+      "gold_answer": "agriculture",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7602,
+      "is_correct": 0
+    },
+    {
+      "id": 98,
+      "query": "What is the mesoglea situated along the underside of?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7154,
+      "is_correct": 1
+    },
+    {
+      "id": 99,
+      "query": "What is operated by Academic Colleges Group in Wanganui?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7166,
+      "is_correct": 1
+    },
+    {
+      "id": 100,
+      "query": "What century did the Germanic vocalism Rin come from?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7336,
+      "is_correct": 1
+    },
+    {
+      "id": 101,
+      "query": "What did a greedy merchant do to the mermaid?",
+      "gold_answer": "captured",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7589,
+      "is_correct": 0
+    },
+    {
+      "id": 102,
+      "query": "How many households had someone alone under the age of 18?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7501,
+      "is_correct": 1
+    },
+    {
+      "id": 103,
+      "query": "What certificates must private schools worldwide work towards?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7633,
+      "is_correct": 1
+    },
+    {
+      "id": 104,
+      "query": "Who designed the Fogg Museum of Art?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7586,
+      "is_correct": 1
+    },
+    {
+      "id": 105,
+      "query": "What Swiss city was the center of the Calvinist movement?",
+      "gold_answer": "Geneva",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7486,
+      "is_correct": 0
+    },
+    {
+      "id": 106,
+      "query": "What was Tymnet",
+      "gold_answer": "an international data communications network headquartered in San Jose, CA",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.768,
+      "is_correct": 0
+    },
+    {
+      "id": 107,
+      "query": "What is the the old south branch of the Rhine called?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.369,
+      "is_correct": 1
+    },
+    {
+      "id": 108,
+      "query": "Which Spanish officer established the settlement at St. Augustine?",
+      "gold_answer": "Pedro Menéndez de Avilés",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.357,
+      "is_correct": 0
+    },
+    {
+      "id": 109,
+      "query": "Where is much of the work of the Scottish Parliament done?",
+      "gold_answer": "committee",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3675,
+      "is_correct": 0
+    },
+    {
+      "id": 110,
+      "query": "What is the cycle condenser sometimes called?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3651,
+      "is_correct": 1
+    },
+    {
+      "id": 112,
+      "query": "What alternative to ARPANET was developed? ",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3533,
+      "is_correct": 1
+    },
+    {
+      "id": 113,
+      "query": "What was classified in 2008?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3571,
+      "is_correct": 1
+    },
+    {
+      "id": 114,
+      "query": "Which reason is given sometimes to plead not guilty involving these matters?",
+      "gold_answer": "Guilt implies wrong-doing",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3611,
+      "is_correct": 0
+    },
+    {
+      "id": 115,
+      "query": "What is the problem attributed to defining if two finite graphs are isomorphic?",
+      "gold_answer": "The graph isomorphism problem",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.358,
+      "is_correct": 0
+    },
+    {
+      "id": 116,
+      "query": "Which organization does the UNFCCC processes support?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3664,
+      "is_correct": 1
+    },
+    {
+      "id": 117,
+      "query": "What is the magnitude of force divided by when external force is added?",
+      "gold_answer": "mass of the system",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3635,
+      "is_correct": 0
+    },
+    {
+      "id": 118,
+      "query": "The referendum to establish a devolved Scottish Assembly succeeded in what year?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.362,
+      "is_correct": 1
+    },
+    {
+      "id": 119,
+      "query": "What cells do plants and animals both have?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3603,
+      "is_correct": 1
+    },
+    {
+      "id": 120,
+      "query": " What does colonialism and imperialism share?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3557,
+      "is_correct": 1
+    },
+    {
+      "id": 121,
+      "query": "When was the Model United Nations team ranked second in North America?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3524,
+      "is_correct": 1
+    },
+    {
+      "id": 122,
+      "query": "What is submitted to only part of Parliament for a full debate?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3832,
+      "is_correct": 1
+    },
+    {
+      "id": 123,
+      "query": "What is Fe2O?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3726,
+      "is_correct": 1
+    },
+    {
+      "id": 124,
+      "query": "How did Celeron handle meeting with New Briton?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3524,
+      "is_correct": 1
+    },
+    {
+      "id": 125,
+      "query": "What lake contains part of the Rhine Falls?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3709,
+      "is_correct": 1
+    },
+    {
+      "id": 126,
+      "query": "Where do ctenophora live?",
+      "gold_answer": "marine waters",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3613,
+      "is_correct": 0
+    },
+    {
+      "id": 127,
+      "query": "What was the name of the first Huguenot outpost in South Carolina?",
+      "gold_answer": "Charlesfort",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3579,
+      "is_correct": 0
+    },
+    {
+      "id": 128,
+      "query": " After 1945, what challenged the British empire?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3568,
+      "is_correct": 1
+    },
+    {
+      "id": 129,
+      "query": "How has this debate been proven?",
+      "gold_answer": "This debate has proved difficult",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3524,
+      "is_correct": 0
+    },
+    {
+      "id": 130,
+      "query": "Which tribes did Genghis Khan unite?",
+      "gold_answer": "Mongol and Turkic tribes",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3524,
+      "is_correct": 0
+    },
+    {
+      "id": 131,
+      "query": "How many Huguenots were in France in the early 18th century?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3717,
+      "is_correct": 1
+    },
+    {
+      "id": 132,
+      "query": "In what year did OPEC pull out of the Bretton Woods Accord?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3524,
+      "is_correct": 1
+    },
+    {
+      "id": 133,
+      "query": "According to the wealth concentration theory, what advantage do the wealthy have in accumulating new wealth?",
+      "gold_answer": "means to invest",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3524,
+      "is_correct": 0
+    },
+    {
+      "id": 134,
+      "query": "What are common outcomes of a project?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3802,
+      "is_correct": 1
+    },
+    {
+      "id": 135,
+      "query": "What are some existing facilities?",
+      "gold_answer": "electrical, water, sewage, phone, and cable facilities",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3605,
+      "is_correct": 0
+    },
+    {
+      "id": 136,
+      "query": "What percentage of the student body was affected by grade inflation in 2004?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3645,
+      "is_correct": 1
+    },
+    {
+      "id": 137,
+      "query": "Who challenged the plague theory first?",
+      "gold_answer": "British bacteriologist J. F. D. Shrewsbury",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3539,
+      "is_correct": 0
+    },
+    {
+      "id": 138,
+      "query": "Where did France focus its efforts to rebuild its empire?",
+      "gold_answer": "Africa",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3662,
+      "is_correct": 0
+    },
+    {
+      "id": 139,
+      "query": "Trotsky thought what was not needed for a true Russian revolution.",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3589,
+      "is_correct": 1
+    },
+    {
+      "id": 140,
+      "query": "What group of people performed revolutionary civil disobedience toward the Austrian government?",
+      "gold_answer": "Hungarians",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3667,
+      "is_correct": 0
+    },
+    {
+      "id": 141,
+      "query": "What is used to view the properties of crystals?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3726,
+      "is_correct": 1
+    },
+    {
+      "id": 142,
+      "query": "What types of employees does and interior design firm usually have?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3813,
+      "is_correct": 1
+    },
+    {
+      "id": 143,
+      "query": "What was believed to be the cause of devastation to the civilization?",
+      "gold_answer": "diseases from Europe",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3524,
+      "is_correct": 0
+    },
+    {
+      "id": 144,
+      "query": " What was made valid in the late 19th and 20th centuries?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3648,
+      "is_correct": 1
+    },
+    {
+      "id": 145,
+      "query": "What entity owns V/Line?",
+      "gold_answer": "Victorian Government",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3639,
+      "is_correct": 0
+    },
+    {
+      "id": 146,
+      "query": "What evolved 5.3 billion years ago?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3596,
+      "is_correct": 1
+    },
+    {
+      "id": 147,
+      "query": "The Maroons compete in what league division?",
+      "gold_answer": "NCAA's Division III",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3568,
+      "is_correct": 0
+    },
+    {
+      "id": 148,
+      "query": "BQP and QMA are examples of complexity classes most commonly associated with what type of Turing machine?",
+      "gold_answer": "quantum",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.378,
+      "is_correct": 0
+    },
+    {
+      "id": 149,
+      "query": "What type of motivators are achievement and outside determination considered?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.3625,
+      "is_correct": 1
+    }
+  ]
+}

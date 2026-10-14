@@ -148,6 +148,7 @@ async def expand_query(
             temperature=0.7,
             max_tokens=200,
         )
+        import time; time.sleep(3.5)  # Groq free tier: ~30 req/min
         raw = response.choices[0].message.content
         return _parse_query_list(raw, fallback=query, n=n)
     except Exception as e:  # noqa: BLE001
@@ -226,6 +227,9 @@ def _rerank_sync(
     sorted by relevance, or None on failure.
     """
     if not documents:
+        return None
+
+    if cohere_client is None:
         return None
 
     try:
@@ -327,7 +331,8 @@ class CorrectiveRetriever:
             final_metadatas = metadatas[: self.final_top_n]
             final_distances = distances[: self.final_top_n]
             final_ids = ids[: self.final_top_n]
-            final_scores = [0.0] * len(final_documents)
+            # Cosine distance proxy: similarity = max(0.0, min(1.0, 1.0 - d))
+            final_scores = [max(0.0, min(1.0, 1.0 - d)) for d in final_distances]
             method = "corrective_distance_fallback"
 
         print(

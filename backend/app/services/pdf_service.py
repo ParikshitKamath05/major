@@ -122,6 +122,7 @@ def describe_image(b64_data: str, image_format: str) -> str:
                 max_tokens=1024,
             )
 
+            import time; time.sleep(3.5)  # Groq free tier: ~30 req/min
             return response.choices[0].message.content
 
         except Exception as e:

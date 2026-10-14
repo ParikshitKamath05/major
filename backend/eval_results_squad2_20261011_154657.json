@@ -1,0 +1,61 @@
+{
+  "timestamp": "20261011_154657",
+  "n_succeeded": 5,
+  "n_failed": 0,
+  "metrics": {
+    "accuracy": 0.4,
+    "ece": 0.3465,
+    "brier_score": 0.351,
+    "auroc_pos": 1.0,
+    "auroc_neg": 0.0,
+    "conf_std": 0.0131,
+    "n_unique_conf": 5
+  },
+  "results": [
+    {
+      "id": 0,
+      "query": "When are subject committees established?",
+      "gold_answer": "beginning of each parliamentary session",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7539,
+      "is_correct": 0
+    },
+    {
+      "id": 1,
+      "query": "In what year did Huguenot refugees first settle in Norwich?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7577,
+      "is_correct": 1
+    },
+    {
+      "id": 2,
+      "query": "What city served as Poland's capital in 1313?",
+      "gold_answer": "Kraków",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7372,
+      "is_correct": 0
+    },
+    {
+      "id": 3,
+      "query": "What have the two different Islamist movements been described as oscillating between?",
+      "gold_answer": "poles",
+      "is_answerable": true,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7253,
+      "is_correct": 0
+    },
+    {
+      "id": 4,
+      "query": "deforestation increased in Brazil during what years?",
+      "gold_answer": "",
+      "is_answerable": false,
+      "predicted_answer": "I cannot answer this question reliably. The provided documents do not contain sufficient information regarding this specific query.",
+      "predictive_confidence": 0.7583,
+      "is_correct": 1
+    }
+  ]
+}
